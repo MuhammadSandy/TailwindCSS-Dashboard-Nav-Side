@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+#menuBtn span:nth-child(1),
+#menuBtn span:nth-child(3) {
+    transform-origin: center;
+}
+
+#menuBtn span:nth-child(2) {
+    transform-origin: left;
+    transition-delay: 0.4s;
+}
+
+#menuBtn.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+    transition-delay: 0.4s;
+}
+#menuBtn.active span:nth-child(2) {
+    transform: scaleX(0);
+    opacity: 0;
+    transition-delay: 0s;
+}
+#menuBtn.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+    transition-delay: 0.4s;
+}
+
+#dropMenu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}

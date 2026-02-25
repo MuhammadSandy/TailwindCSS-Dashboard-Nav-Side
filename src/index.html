@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/output.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="min-h-screen flex flex-col">
+        <header class="z-50">
+            <div class="bg-slate-800 flex justify-between">
+                <div class="p-5 w-full md:w-[300px] flex justify-between items-center border-r border-white/25">
+                    <div>
+                        <h6 class="text-white">ShandySan</h6>
+                    </div>
+                    <div>
+                        <button id="menuBtn" class="relative w-5 h-4 flex flex-col justify-between">
+                            <span class="line h-0.5 bg-white transition-all duration-1000"></span>
+                            <span class="line h-0.5 bg-white transition-all duration-1000"></span>
+                            <span class="line h-0.5 bg-white transition-all duration-1000"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:flex w-full h-full justify-between items-center p-5">
+                    <div>
+                        <h6 class="text-white">Dashboard</h6>
+                    </div>
+                    <div>
+                        <ul class="flex flex-row gap-x-7 items-center">
+                            <li id="dateTime" class="text-white">date & time</li>
+                            <li class="text-white"><a href=""><i class="fa-sharp fa-solid fa-bell"></i></a></li>
+                            <li class="text-white"><a href=""><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="flex flex-1">
+            <nav>
+                <div id="menuSidebar" class="flex flex-col justify-between absolute top-0 left-0 md:relative w-0 h-full overflow-hidden bg-slate-800 transition-all duration-1000">
+                    <ul class="mt-16 md:mt-0">
+                        <li class="w-full text-nowrap text-white px-5 py-3 hover:bg-slate-700 transition-all"><a class="block" href="">Dashboard</a></li>
+                        <li class="hover:bg-slate-700 transition-all">
+                            <div class="dropdown">
+                                <button id="dropToggle" class="w-full flex text-white px-5 py-3 justify-between items-center">
+                                    <h6 class="text-nowrap">Database</h6>
+                                    <i id="dropIcon" class="fa-solid fa-angle-right transition-all duration-500"></i>
+                                </button>
+                                <ul id="dropMenu" class="transition-all duration-500">
+                                    <li><a class="block px-10 py-3 text-nowrap text-white bg-slate-900 hover:bg-slate-700 transition-all" href="">Bahan Baku</a></li>
+                                    <li><a class="block px-10 py-3 text-nowrap text-white bg-slate-900 hover:bg-slate-700 transition-all" href="">Produk</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="w-full flex-1 text-nowrap text-white px-5 py-3 hover:bg-slate-700 transition-all"><a class="block" href="">Bahan Baku</a></li>
+                        <li class="w-full text-nowrap text-white px-5 py-3 hover:bg-slate-700 transition-all"><a class="block" href="">produk</a></li>
+                    </ul>
+                    <ul>
+                        <li class="w-full justify-between items-center flex text-nowrap text-white px-5 py-3 hover:bg-slate-700 transition-all">
+                            <a href="">Keluar</a>
+                            <i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="w-full flex-1 p-5">
+                <h1>Hello World</h1>
+            </section>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
